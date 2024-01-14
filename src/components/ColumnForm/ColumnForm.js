@@ -9,7 +9,7 @@ const ColumnForm = props => {
     const [icon, setIcon] = useState('');
     const dispatch = useDispatch();
 
-    const handleSubmit = e => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         dispatch({ type: 'ADD_COLUMN', payload: { title, icon } });
         setTitle('');
@@ -17,7 +17,7 @@ const ColumnForm = props => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className={styles.columnForm}>
+        <form className={styles.columnForm} onSubmit={handleSubmit}>
             <label className={styles.label}>Title:</label>
             <TextInput value={title} onChange={e => setTitle(e.target.value)} />
 

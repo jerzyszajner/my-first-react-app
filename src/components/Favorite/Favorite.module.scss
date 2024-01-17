@@ -1,17 +1,20 @@
 @import '../../styles/settings.scss';
 
 .favorite {
-  padding: $base-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: $color-dark;
+  align-items: center;
 }
 
-.subtitle {
-  padding: ($base-size * 2) 0;
-  text-align: center;
-  font-size: ($base-size * 2);
-  font-style: italic;
-  font-weight: normal;
-}
-
-.title + .subtitle {
-  margin-top: (- $base-size * 3);
+.cards{
+  flex-shrink: 0;
+  width: calc(33% - 12px);
+  background: #fff;
+  margin: 0 12px 12px 0;
+  padding: 18px;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+  color: #2f3542;
 }

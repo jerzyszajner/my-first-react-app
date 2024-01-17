@@ -1,6 +1,8 @@
 @import './settings.scss';
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -18,6 +20,10 @@ body {
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+html {
+  overflow-y: scroll;
 }
 
 @import "./typography.scss";

@@ -1,5 +1,6 @@
 import Container from '../Container/Container';
 import styles from './NavBar.module.scss';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -7,24 +8,24 @@ const NavBar = () => {
             <Container>
                 <div className={styles.navContent}>
                     <div className={styles.navIcon}>
-                        <a href="/" className={styles.navIcon}>
+                        <Link to="/" className={styles.navIcon}>
                             <span className="fa fa-tasks" />
-                        </a>
+                        </Link>
                     </div>
                     <ul className={styles.navList}>
                         <li className={styles.navItem}>
-                            <a href="/" className={styles.navLink}>Home</a>
+                            <NavLink to="/" className={({ isActive }) => isActive ? styles.linkActive : styles.navItemLink}>Home</NavLink>
                         </li>
                         <li className={styles.navItem}>
-                            <a href="/favorite" className={styles.navLink}>Favorite</a>
+                            <NavLink to="/favorite" className={({ isActive }) => isActive ? styles.linkActive : styles.navItemLink}>Favorite</NavLink>
                         </li>
                         <li className={styles.navItem}>
-                            <a href="/about" className={styles.navLink}>About</a>
+                            <NavLink to="/about" className={({ isActive }) => isActive ? styles.linkActive : styles.navItemLink}>About</NavLink>
                         </li>
                     </ul>
                 </div>
             </Container>
-        </nav>
+        </nav >
     );
 };
 

@@ -25,7 +25,7 @@
     margin: 0 20px;
 }
 
-.navLink {
+.navItemLink {
     text-decoration: none;
     color: $color-light;
 }
@@ -33,4 +33,9 @@
 .navIcon {
     font-size: 24px;
     color: $color-light;
+}
+
+.linkActive {
+    color: $color-warning;
+    text-decoration: none;
 }

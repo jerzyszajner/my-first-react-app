@@ -46,8 +46,10 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/shortid": "^0.0.32",
+    "css-loader": "^6.9.0",
     "eslint": "^8.56.0",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-jest": "^27.6.3"
+    "eslint-plugin-jest": "^27.6.3",
+    "sass-loader": "^14.0.0"
   }
 }

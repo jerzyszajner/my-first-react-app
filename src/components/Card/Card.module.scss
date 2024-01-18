@@ -13,8 +13,24 @@
 }
 
 .favoriteButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 
     &.isFavorite {
         color: $color-success;
+        cursor: pointer;
     }
 }
+
+.removeFavoriteButton {
+    color: $color-warning;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: $base-size;
+    font-size: 16px;
+}
+
+;
